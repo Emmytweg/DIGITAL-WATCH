@@ -27,3 +27,7 @@ updateClock();
 // Control background music
 const backgroundMusic = document.getElementById('background-music');
 backgroundMusic.volume = 0.2; // Set volume (0.0 to 1.0)
+// Play music after user interaction
+document.body.addEventListener('click', () => {
+    backgroundMusic.play();
+})
