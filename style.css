@@ -13,6 +13,9 @@ body {
     overflow: hidden;
     animation: backgroundAnimation 20s infinite alternate;
 }
+audio{
+    display: none;
+}
 @keyframes backgroundAnimation {
     0% {
         background-image: url('🔥\ Free\ download\ Galaxy\ S7\ Edge\ Wallpaper\ Image\ on\ WallpaperSafari.jpg');
