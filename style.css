@@ -1,0 +1,158 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    overflow: hidden;
+    animation: backgroundAnimation 20s infinite alternate;
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-image: url('🔥\ Free\ download\ Galaxy\ S7\ Edge\ Wallpaper\ Image\ on\ WallpaperSafari.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    33% {
+        background-image: url('c25383c2-9835-41ae-9502-94988f538a71.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    66% {
+        background-image: url('Yellow\ Purple\ Gradient\ Color\ 3d\ Low\ Poly\ Technology\ Blur\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background-image: url('Trending\ 3D\ Grid\ Loop\ Background\ Free\ Download.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Watch Container */
+.watch-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+.watch-container:hover {
+    transform: scale(1.05);
+    
+}
+/* Time Display */
+.time {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease-in-out;
+}
+.time span {
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+/* Date and Day */
+.details {
+    margin-top: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+
+}
+
+/* Circular Outline */
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate 10s linear infinite;
+}
+
+/* Circular Movement */
+.circular-movement {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: circularMovement 60s linear infinite;
+}
+
+@keyframes circularMovement {
+    0% {
+        transform: rotate(0deg) translateX(120px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+}
+/* Rotating Animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    .watch-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .time {
+        font-size: 36px;
+    }
+
+    .details {
+        font-size: 18px;
+    }
+
+    .circle {
+        width: 100%;
+        height: 100%;
+    }
+
+    .circular-movement {
+        width: 8px;
+        height: 8px;
+        animation: circularMovementMobile 60s linear infinite;
+    }
+}
+
+@keyframes circularMovementMobile {
+    0% {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
